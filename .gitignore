@@ -1,0 +1,20 @@
+# Środowisko wirtualne
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# System
+.DS_Store
+
+# Logi
+*.log
+
+
+# Wytrenowane modele LSTM: łącznie 52 MB, w git tylko ostatnie okno (2025Q4); reszta powstaje lokalnie
+models/lstm/**
+!models/lstm/
+!models/lstm/*/
+!models/lstm/*/2025Q4_*

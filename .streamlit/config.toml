@@ -1,0 +1,30 @@
+# Motyw aplikacji: jasne tło, dużo przestrzeni, ciemnoszary tekst, jeden kolor akcentu (głęboki granat).
+# Cały wygląd pochodzi z tego pliku i wbudowanych komponentów Streamlit; własnego CSS jest kilka linijek w app.py.
+[theme]
+base = "light"
+primaryColor = "#1F3A5F"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F7F5"
+textColor = "#2B2B2B"
+borderColor = "#E6E6E2"
+dataframeBorderColor = "#E6E6E2"
+dataframeHeaderBackgroundColor = "#FAFAF8"
+linkColor = "#1F3A5F"
+font = "Inter, -apple-system, 'Helvetica Neue', sans-serif"
+headingFont = "Inter, -apple-system, 'Helvetica Neue', sans-serif"
+headingFontWeights = [500, 500, 500, 500, 500, 500]
+headingFontSizes = ["2.4rem", "1.6rem", "1.25rem", "1.1rem", "1rem", "0.9rem"]
+baseFontSize = 15
+baseRadius = "0.4rem"
+buttonRadius = "0.4rem"
+showWidgetBorder = true
+metricValueFontSize = "1.55rem"
+metricValueFontWeight = 500
+paddingTop = "2.5rem"
+chartCategoricalColors = ["#1F3A5F", "#8C8C8C", "#BFBFBF", "#4B4B4B"]
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

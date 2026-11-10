@@ -1,0 +1,149 @@
+{
+  "mode": "full",
+  "mode_description": "Wyniki pełne: 5 powtórzeń (ziarna 0–4)",
+  "duration_seconds": 1656.7,
+  "n_windows": 24,
+  "windows": [
+    "2020Q1",
+    "2020Q2",
+    "2020Q3",
+    "2020Q4",
+    "2021Q1",
+    "2021Q2",
+    "2021Q3",
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4"
+  ],
+  "n_test_days": 1508,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "max_epochs": 50,
+  "arima_order": [
+    0,
+    0,
+    0
+  ],
+  "chosen_config": {
+    "A": {
+      "window": 20,
+      "units": 64,
+      "layers": 1,
+      "mae_2019": 0.018434005381848324,
+      "direction_accuracy_2019": 0.5436507936507937,
+      "pred_std_2019": 0.001556998183331539,
+      "all_collapsed": false
+    },
+    "B": {
+      "window": 60,
+      "units": 32,
+      "layers": 2,
+      "mae_2019": 0.018477677987063394,
+      "direction_accuracy_2019": 0.541005291005291,
+      "pred_std_2019": 0.0016539756101233765,
+      "all_collapsed": false
+    },
+    "_info": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "max_epochs": 50,
+      "train_period": [
+        "2015-01-01",
+        "2018-12-31"
+      ],
+      "eval_period": [
+        "2019-01-01",
+        "2019-12-31"
+      ],
+      "min_std_fraction": 0.2
+    }
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "libraries": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "yfinance": "1.8.0",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1"
+  },
+  "parameters": {
+    "TICKERS": [
+      "NVDA"
+    ],
+    "MARKET_TICKER": "QQQ",
+    "STUDY_START": "2015-01-01",
+    "STUDY_END": "2025-12-31",
+    "TEST_START": "2020-01-01",
+    "TEST_END": "2025-12-31",
+    "WINDOW_MONTHS": 3,
+    "FEATURES_A": [
+      "log_return",
+      "log_volume_change"
+    ],
+    "FEATURES_B": [
+      "log_return",
+      "log_volume_change",
+      "close_to_sma20",
+      "close_to_sma50",
+      "rsi14",
+      "volatility20",
+      "market_log_return"
+    ],
+    "LSTM_BATCH_SIZE": 32,
+    "LSTM_MAX_EPOCHS": 50,
+    "LSTM_PATIENCE": 5,
+    "LSTM_DROPOUT": 0.2,
+    "LSTM_VALIDATION_FRACTION": 0.2,
+    "TUNING_WINDOWS": [
+      20,
+      60
+    ],
+    "TUNING_UNITS": [
+      32,
+      64
+    ],
+    "TUNING_LAYERS": [
+      1,
+      2
+    ],
+    "TUNING_MIN_STD_FRACTION": 0.2,
+    "ANOMALY_FEATURES": [
+      "abs_log_return",
+      "log_volume_change",
+      "volatility20"
+    ],
+    "ANOMALY_CONTAMINATION": 0.02,
+    "ANOMALY_RANDOM_STATE": 42,
+    "COMMISSION": 0.001,
+    "THRESHOLD": 0.001,
+    "ALPHA": 0.05
+  },
+  "command": "/Users/konrad/praca-lstm/src/run_experiment.py"
+}

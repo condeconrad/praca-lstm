@@ -1,0 +1,37 @@
+{
+  "A": {
+    "window": 20,
+    "units": 64,
+    "layers": 1,
+    "mae_2019": 0.018434005381848324,
+    "direction_accuracy_2019": 0.5436507936507937,
+    "pred_std_2019": 0.001556998183331539,
+    "all_collapsed": false
+  },
+  "B": {
+    "window": 60,
+    "units": 32,
+    "layers": 2,
+    "mae_2019": 0.018477677987063394,
+    "direction_accuracy_2019": 0.541005291005291,
+    "pred_std_2019": 0.0016539756101233765,
+    "all_collapsed": false
+  },
+  "_info": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "max_epochs": 50,
+    "train_period": [
+      "2015-01-01",
+      "2018-12-31"
+    ],
+    "eval_period": [
+      "2019-01-01",
+      "2019-12-31"
+    ],
+    "min_std_fraction": 0.2
+  }
+}

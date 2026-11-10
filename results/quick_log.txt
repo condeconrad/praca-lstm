@@ -1,0 +1,60 @@
+Tryb: quick
+NVDA: używam istniejącego pliku NVDA.csv
+NVDA: 2776 wierszy, 2015-01-02 – 2026-01-15, braki: {'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Volume': 0}
+QQQ: używam istniejącego pliku QQQ.csv
+QQQ: 2776 wierszy, 2015-01-02 – 2026-01-15, braki: {'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Volume': 0}
+Brak plików kontrolnych w data/control/ – kontrola ze Stooq pominięta.
+Tabela cech: 2726 dni, 2015-03-16 – 2026-01-14
+Okna walk-forward: 2 (2020Q1 – 2020Q2)
+ARIMA: wybrano rząd (p, d, q) = (0, 0, 0), AIC = -5307.7
+Strojenie LSTM: 8 kombinacji × 2 warianty × 1 ziaren, maks. 5 epok
+  strojenie A okno=20 neurony=32 warstwy=1 ziarno=0: MAE=0.01848, trafność=0.548, std=0.00122, epoki=5, 4 s
+  strojenie A okno=20 neurony=32 warstwy=2 ziarno=0: MAE=0.01849, trafność=0.560, std=0.00154, epoki=5, 2 s
+  strojenie A okno=20 neurony=64 warstwy=1 ziarno=0: MAE=0.01845, trafność=0.552, std=0.00123, epoki=5, 1 s
+  strojenie A okno=20 neurony=64 warstwy=2 ziarno=0: MAE=0.01845, trafność=0.556, std=0.00120, epoki=5, 3 s
+  strojenie A okno=60 neurony=32 warstwy=1 ziarno=0: MAE=0.01848, trafność=0.548, std=0.00115, epoki=5, 2 s
+  strojenie A okno=60 neurony=32 warstwy=2 ziarno=0: MAE=0.01845, trafność=0.552, std=0.00109, epoki=5, 3 s
+  strojenie A okno=60 neurony=64 warstwy=1 ziarno=0: MAE=0.01849, trafność=0.548, std=0.00154, epoki=5, 2 s
+  strojenie A okno=60 neurony=64 warstwy=2 ziarno=0: MAE=0.01847, trafność=0.552, std=0.00086, epoki=5, 4 s
+  strojenie B okno=20 neurony=32 warstwy=1 ziarno=0: MAE=0.01880, trafność=0.492, std=0.00310, epoki=5, 1 s
+  strojenie B okno=20 neurony=32 warstwy=2 ziarno=0: MAE=0.01861, trafność=0.512, std=0.00279, epoki=5, 2 s
+  strojenie B okno=20 neurony=64 warstwy=1 ziarno=0: MAE=0.01824, trafność=0.571, std=0.00238, epoki=5, 1 s
+  strojenie B okno=20 neurony=64 warstwy=2 ziarno=0: MAE=0.01865, trafność=0.504, std=0.00163, epoki=5, 3 s
+  strojenie B okno=60 neurony=32 warstwy=1 ziarno=0: MAE=0.01880, trafność=0.508, std=0.00272, epoki=5, 2 s
+  strojenie B okno=60 neurony=32 warstwy=2 ziarno=0: MAE=0.01856, trafność=0.520, std=0.00191, epoki=5, 3 s
+  strojenie B okno=60 neurony=64 warstwy=1 ziarno=0: MAE=0.01853, trafność=0.540, std=0.00217, epoki=5, 2 s
+  strojenie B okno=60 neurony=64 warstwy=2 ziarno=0: MAE=0.01857, trafność=0.540, std=0.00134, epoki=5, 4 s
+Wybrane ustawienia A: {'window': 60, 'units': 32, 'layers': 2, 'mae_2019': 0.018448314865699682, 'direction_accuracy_2019': 0.5515873015873016, 'pred_std_2019': 0.0010868364583582805, 'all_collapsed': False}
+Wybrane ustawienia B: {'window': 20, 'units': 64, 'layers': 1, 'mae_2019': 0.01824131398364657, 'direction_accuracy_2019': 0.5714285714285714, 'pred_std_2019': 0.0023787760308082236, 'all_collapsed': False}
+Model naiwny:
+  naive 2020Q1: 1209 dni uczących, 62 testowych, uczenie 0.0 s
+  naive 2020Q2: 1271 dni uczących, 63 testowych, uczenie 0.0 s
+ARIMA:
+  arima 2020Q1: 1209 dni uczących, 62 testowych, uczenie 0.1 s
+  arima 2020Q2: 1271 dni uczących, 63 testowych, uczenie 0.0 s
+lstm_A, ziarno 0:
+  lstm_A 2020Q1: 1209 dni uczących, 62 testowych, uczenie 3.6 s
+  lstm_A 2020Q2: 1271 dni uczących, 63 testowych, uczenie 3.7 s
+lstm_B, ziarno 0:
+  lstm_B 2020Q1: 1209 dni uczących, 62 testowych, uczenie 1.6 s
+  lstm_B 2020Q2: 1271 dni uczących, 63 testowych, uczenie 1.6 s
+Isolation Forest:
+  dni nietypowych w teście: 12 z 125
+Miary:
+ model      mae  direction_accuracy  pred_std  mcnemar_p_value  binomial_p_value
+ naive 0.032124               0.568  0.000000         1.000000          0.076060
+ arima 0.031912               0.568  0.000003         1.000000          0.076060
+lstm_A 0.031912               0.568  0.001162         1.000000          0.076060
+lstm_B 0.031109               0.552  0.004946         0.738266          0.141543
+Strategie:
+ model     strategy  total_return  max_drawdown  n_trades  share_days_in_stock
+     - buy_and_hold      0.587425      -0.37554         2                1.000
+ naive        basic      0.587425      -0.37554         2                1.000
+ naive    threshold      0.000000       0.00000         0                0.000
+ arima        basic      0.587425      -0.37554         2                1.000
+ arima    threshold      0.587425      -0.37554         2                1.000
+lstm_A        basic      0.587425      -0.37554         2                1.000
+lstm_A    threshold      0.526929      -0.37554         6                0.904
+lstm_B        basic      0.418470      -0.37554        12                0.824
+lstm_B    threshold      0.268023      -0.37554        18                0.784
+Gotowe. Czas: 58.8 s. Wyniki w /Users/konrad/praca-lstm/results

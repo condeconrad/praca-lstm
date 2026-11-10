@@ -1,0 +1,34 @@
+{
+  "yfinance_version": "1.8.0",
+  "study_start": "2015-01-01",
+  "download_end_exclusive": "2026-01-16",
+  "auto_adjust": true,
+  "tickers": {
+    "NVDA": {
+      "ticker": "NVDA",
+      "rows": 2776,
+      "first_date": "2015-01-02",
+      "last_date": "2026-01-15",
+      "missing_values": {
+        "Open": 0,
+        "High": 0,
+        "Low": 0,
+        "Close": 0,
+        "Volume": 0
+      }
+    },
+    "QQQ": {
+      "ticker": "QQQ",
+      "rows": 2776,
+      "first_date": "2015-01-02",
+      "last_date": "2026-01-15",
+      "missing_values": {
+        "Open": 0,
+        "High": 0,
+        "Low": 0,
+        "Close": 0,
+        "Volume": 0
+      }
+    }
+  }
+}

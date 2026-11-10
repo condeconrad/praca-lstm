@@ -1,0 +1,182 @@
+Tryb: demo
+NVDA: używam istniejącego pliku NVDA.csv
+NVDA: 2776 wierszy, 2015-01-02 – 2026-01-15, braki: {'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Volume': 0}
+QQQ: używam istniejącego pliku QQQ.csv
+QQQ: 2776 wierszy, 2015-01-02 – 2026-01-15, braki: {'Open': 0, 'High': 0, 'Low': 0, 'Close': 0, 'Volume': 0}
+Brak plików kontrolnych w data/control/ – kontrola ze Stooq pominięta.
+Tabela cech: 2726 dni, 2015-03-16 – 2026-01-14
+Okna walk-forward: 24 (2020Q1 – 2025Q4)
+ARIMA: wybrano rząd (p, d, q) = (0, 0, 0), AIC = -5307.7
+Strojenie LSTM: 8 kombinacji × 2 warianty × 3 ziaren, maks. 50 epok
+  strojenie A okno=20 neurony=32 warstwy=1 ziarno=0: MAE=0.01858, trafność=0.528, std=0.00273, epoki=30, 5 s
+  strojenie A okno=20 neurony=32 warstwy=1 ziarno=1: MAE=0.01846, trafność=0.552, std=0.00156, epoki=11, 2 s
+  strojenie A okno=20 neurony=32 warstwy=1 ziarno=2: MAE=0.01850, trafność=0.556, std=0.00161, epoki=12, 2 s
+  strojenie A okno=20 neurony=32 warstwy=2 ziarno=0: MAE=0.01845, trafność=0.560, std=0.00167, epoki=19, 4 s
+  strojenie A okno=20 neurony=32 warstwy=2 ziarno=1: MAE=0.01844, trafność=0.552, std=0.00116, epoki=8, 3 s
+  strojenie A okno=20 neurony=32 warstwy=2 ziarno=2: MAE=0.01843, trafność=0.552, std=0.00059, epoki=6, 3 s
+  strojenie A okno=20 neurony=64 warstwy=1 ziarno=0: MAE=0.01845, trafność=0.552, std=0.00123, epoki=6, 2 s
+  strojenie A okno=20 neurony=64 warstwy=1 ziarno=1: MAE=0.01838, trafność=0.552, std=0.00085, epoki=6, 2 s
+  strojenie A okno=20 neurony=64 warstwy=1 ziarno=2: MAE=0.01847, trafność=0.528, std=0.00259, epoki=16, 3 s
+  strojenie A okno=20 neurony=64 warstwy=2 ziarno=0: MAE=0.01850, trafność=0.548, std=0.00168, epoki=15, 5 s
+  strojenie A okno=20 neurony=64 warstwy=2 ziarno=1: MAE=0.01848, trafność=0.563, std=0.00195, epoki=13, 4 s
+  strojenie A okno=20 neurony=64 warstwy=2 ziarno=2: MAE=0.01844, trafność=0.552, std=0.00125, epoki=8, 3 s
+  strojenie A okno=60 neurony=32 warstwy=1 ziarno=0: MAE=0.01848, trafność=0.548, std=0.00115, epoki=8, 2 s
+  strojenie A okno=60 neurony=32 warstwy=1 ziarno=1: MAE=0.01849, trafność=0.552, std=0.00108, epoki=6, 2 s
+  strojenie A okno=60 neurony=32 warstwy=1 ziarno=2: MAE=0.01850, trafność=0.552, std=0.00137, epoki=8, 2 s
+  strojenie A okno=60 neurony=32 warstwy=2 ziarno=0: MAE=0.01843, trafność=0.552, std=0.00096, epoki=11, 5 s
+  strojenie A okno=60 neurony=32 warstwy=2 ziarno=1: MAE=0.01844, trafność=0.552, std=0.00044, epoki=6, 4 s
+  strojenie A okno=60 neurony=32 warstwy=2 ziarno=2: MAE=0.01869, trafność=0.500, std=0.00271, epoki=15, 6 s
+  strojenie A okno=60 neurony=64 warstwy=1 ziarno=0: MAE=0.01849, trafność=0.548, std=0.00154, epoki=10, 3 s
+  strojenie A okno=60 neurony=64 warstwy=1 ziarno=1: MAE=0.01841, trafność=0.552, std=0.00049, epoki=6, 2 s
+  strojenie A okno=60 neurony=64 warstwy=1 ziarno=2: MAE=0.01844, trafność=0.552, std=0.00096, epoki=6, 2 s
+  strojenie A okno=60 neurony=64 warstwy=2 ziarno=0: MAE=0.01861, trafność=0.536, std=0.00197, epoki=19, 11 s
+  strojenie A okno=60 neurony=64 warstwy=2 ziarno=1: MAE=0.01846, trafność=0.552, std=0.00036, epoki=6, 5 s
+  strojenie A okno=60 neurony=64 warstwy=2 ziarno=2: MAE=0.01869, trafność=0.488, std=0.00274, epoki=14, 9 s
+  strojenie B okno=20 neurony=32 warstwy=1 ziarno=0: MAE=0.01880, trafność=0.492, std=0.00310, epoki=10, 2 s
+  strojenie B okno=20 neurony=32 warstwy=1 ziarno=1: MAE=0.01860, trafność=0.532, std=0.00267, epoki=6, 1 s
+  strojenie B okno=20 neurony=32 warstwy=1 ziarno=2: MAE=0.01876, trafność=0.532, std=0.00173, epoki=7, 2 s
+  strojenie B okno=20 neurony=32 warstwy=2 ziarno=0: MAE=0.01861, trafność=0.512, std=0.00279, epoki=6, 2 s
+  strojenie B okno=20 neurony=32 warstwy=2 ziarno=1: MAE=0.01841, trafność=0.552, std=0.00206, epoki=6, 2 s
+  strojenie B okno=20 neurony=32 warstwy=2 ziarno=2: MAE=0.01847, trafność=0.548, std=0.00106, epoki=6, 3 s
+  strojenie B okno=20 neurony=64 warstwy=1 ziarno=0: MAE=0.01824, trafność=0.571, std=0.00238, epoki=6, 2 s
+  strojenie B okno=20 neurony=64 warstwy=1 ziarno=1: MAE=0.01860, trafność=0.532, std=0.00316, epoki=12, 2 s
+  strojenie B okno=20 neurony=64 warstwy=1 ziarno=2: MAE=0.01876, trafność=0.540, std=0.00278, epoki=7, 2 s
+  strojenie B okno=20 neurony=64 warstwy=2 ziarno=0: MAE=0.01865, trafność=0.504, std=0.00163, epoki=6, 3 s
+  strojenie B okno=20 neurony=64 warstwy=2 ziarno=1: MAE=0.01841, trafność=0.560, std=0.00261, epoki=6, 3 s
+  strojenie B okno=20 neurony=64 warstwy=2 ziarno=2: MAE=0.01868, trafność=0.536, std=0.00184, epoki=6, 3 s
+  strojenie B okno=60 neurony=32 warstwy=1 ziarno=0: MAE=0.01880, trafność=0.508, std=0.00272, epoki=8, 2 s
+  strojenie B okno=60 neurony=32 warstwy=1 ziarno=1: MAE=0.01857, trafność=0.536, std=0.00208, epoki=6, 2 s
+  strojenie B okno=60 neurony=32 warstwy=1 ziarno=2: MAE=0.01867, trafność=0.536, std=0.00225, epoki=6, 2 s
+  strojenie B okno=60 neurony=32 warstwy=2 ziarno=0: MAE=0.01856, trafność=0.520, std=0.00191, epoki=9, 5 s
+  strojenie B okno=60 neurony=32 warstwy=2 ziarno=1: MAE=0.01847, trafność=0.552, std=0.00174, epoki=6, 4 s
+  strojenie B okno=60 neurony=32 warstwy=2 ziarno=2: MAE=0.01840, trafność=0.552, std=0.00131, epoki=6, 4 s
+  strojenie B okno=60 neurony=64 warstwy=1 ziarno=0: MAE=0.01853, trafność=0.540, std=0.00217, epoki=7, 3 s
+  strojenie B okno=60 neurony=64 warstwy=1 ziarno=1: MAE=0.01861, trafność=0.544, std=0.00319, epoki=8, 3 s
+  strojenie B okno=60 neurony=64 warstwy=1 ziarno=2: MAE=0.01859, trafność=0.532, std=0.00184, epoki=6, 2 s
+  strojenie B okno=60 neurony=64 warstwy=2 ziarno=0: MAE=0.01857, trafność=0.540, std=0.00134, epoki=6, 5 s
+  strojenie B okno=60 neurony=64 warstwy=2 ziarno=1: MAE=0.01853, trafność=0.540, std=0.00202, epoki=9, 6 s
+  strojenie B okno=60 neurony=64 warstwy=2 ziarno=2: MAE=0.01859, trafność=0.528, std=0.00215, epoki=7, 5 s
+Wybrane ustawienia A: {'window': 20, 'units': 64, 'layers': 1, 'mae_2019': 0.018434005381848324, 'direction_accuracy_2019': 0.5436507936507937, 'pred_std_2019': 0.001556998183331539, 'all_collapsed': False}
+Wybrane ustawienia B: {'window': 60, 'units': 32, 'layers': 2, 'mae_2019': 0.018477677987063394, 'direction_accuracy_2019': 0.541005291005291, 'pred_std_2019': 0.0016539756101233765, 'all_collapsed': False}
+Model naiwny:
+  naive 2020Q1: 1209 dni uczących, 62 testowych, uczenie 0.0 s
+  naive 2020Q2: 1271 dni uczących, 63 testowych, uczenie 0.0 s
+  naive 2020Q3: 1334 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2020Q4: 1398 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2021Q1: 1462 dni uczących, 61 testowych, uczenie 0.0 s
+  naive 2021Q2: 1523 dni uczących, 63 testowych, uczenie 0.0 s
+  naive 2021Q3: 1586 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2021Q4: 1650 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2022Q1: 1714 dni uczących, 62 testowych, uczenie 0.0 s
+  naive 2022Q2: 1776 dni uczących, 62 testowych, uczenie 0.0 s
+  naive 2022Q3: 1838 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2022Q4: 1902 dni uczących, 63 testowych, uczenie 0.0 s
+  naive 2023Q1: 1965 dni uczących, 62 testowych, uczenie 0.0 s
+  naive 2023Q2: 2027 dni uczących, 62 testowych, uczenie 0.0 s
+  naive 2023Q3: 2089 dni uczących, 63 testowych, uczenie 0.0 s
+  naive 2023Q4: 2152 dni uczących, 63 testowych, uczenie 0.0 s
+  naive 2024Q1: 2215 dni uczących, 61 testowych, uczenie 0.0 s
+  naive 2024Q2: 2276 dni uczących, 63 testowych, uczenie 0.0 s
+  naive 2024Q3: 2339 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2024Q4: 2403 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2025Q1: 2467 dni uczących, 60 testowych, uczenie 0.0 s
+  naive 2025Q2: 2527 dni uczących, 62 testowych, uczenie 0.0 s
+  naive 2025Q3: 2589 dni uczących, 64 testowych, uczenie 0.0 s
+  naive 2025Q4: 2653 dni uczących, 64 testowych, uczenie 0.0 s
+ARIMA:
+  arima 2020Q1: 1209 dni uczących, 62 testowych, uczenie 0.1 s
+  arima 2020Q2: 1271 dni uczących, 63 testowych, uczenie 0.0 s
+  arima 2020Q3: 1334 dni uczących, 64 testowych, uczenie 0.1 s
+  arima 2020Q4: 1398 dni uczących, 64 testowych, uczenie 0.1 s
+  arima 2021Q1: 1462 dni uczących, 61 testowych, uczenie 0.1 s
+  arima 2021Q2: 1523 dni uczących, 63 testowych, uczenie 0.1 s
+  arima 2021Q3: 1586 dni uczących, 64 testowych, uczenie 0.0 s
+  arima 2021Q4: 1650 dni uczących, 64 testowych, uczenie 0.0 s
+  arima 2022Q1: 1714 dni uczących, 62 testowych, uczenie 0.1 s
+  arima 2022Q2: 1776 dni uczących, 62 testowych, uczenie 0.1 s
+  arima 2022Q3: 1838 dni uczących, 64 testowych, uczenie 0.1 s
+  arima 2022Q4: 1902 dni uczących, 63 testowych, uczenie 0.1 s
+  arima 2023Q1: 1965 dni uczących, 62 testowych, uczenie 0.1 s
+  arima 2023Q2: 2027 dni uczących, 62 testowych, uczenie 0.1 s
+  arima 2023Q3: 2089 dni uczących, 63 testowych, uczenie 0.1 s
+  arima 2023Q4: 2152 dni uczących, 63 testowych, uczenie 0.1 s
+  arima 2024Q1: 2215 dni uczących, 61 testowych, uczenie 0.1 s
+  arima 2024Q2: 2276 dni uczących, 63 testowych, uczenie 0.1 s
+  arima 2024Q3: 2339 dni uczących, 64 testowych, uczenie 0.1 s
+  arima 2024Q4: 2403 dni uczących, 64 testowych, uczenie 0.1 s
+  arima 2025Q1: 2467 dni uczących, 60 testowych, uczenie 0.1 s
+  arima 2025Q2: 2527 dni uczących, 62 testowych, uczenie 0.1 s
+  arima 2025Q3: 2589 dni uczących, 64 testowych, uczenie 0.2 s
+  arima 2025Q4: 2653 dni uczących, 64 testowych, uczenie 0.1 s
+lstm_A, ziarno 0:
+  lstm_A 2020Q1: 1209 dni uczących, 62 testowych, uczenie 1.7 s
+  lstm_A 2020Q2: 1271 dni uczących, 63 testowych, uczenie 3.6 s
+  lstm_A 2020Q3: 1334 dni uczących, 64 testowych, uczenie 3.9 s
+  lstm_A 2020Q4: 1398 dni uczących, 64 testowych, uczenie 3.6 s
+  lstm_A 2021Q1: 1462 dni uczących, 61 testowych, uczenie 5.3 s
+  lstm_A 2021Q2: 1523 dni uczących, 63 testowych, uczenie 7.2 s
+  lstm_A 2021Q3: 1586 dni uczących, 64 testowych, uczenie 5.8 s
+  lstm_A 2021Q4: 1650 dni uczących, 64 testowych, uczenie 2.0 s
+  lstm_A 2022Q1: 1714 dni uczących, 62 testowych, uczenie 2.0 s
+  lstm_A 2022Q2: 1776 dni uczących, 62 testowych, uczenie 2.4 s
+  lstm_A 2022Q3: 1838 dni uczących, 64 testowych, uczenie 2.3 s
+  lstm_A 2022Q4: 1902 dni uczących, 63 testowych, uczenie 2.2 s
+  lstm_A 2023Q1: 1965 dni uczących, 62 testowych, uczenie 2.0 s
+  lstm_A 2023Q2: 2027 dni uczących, 62 testowych, uczenie 2.0 s
+  lstm_A 2023Q3: 2089 dni uczących, 63 testowych, uczenie 2.0 s
+  lstm_A 2023Q4: 2152 dni uczących, 63 testowych, uczenie 2.1 s
+  lstm_A 2024Q1: 2215 dni uczących, 61 testowych, uczenie 2.6 s
+  lstm_A 2024Q2: 2276 dni uczących, 63 testowych, uczenie 2.1 s
+  lstm_A 2024Q3: 2339 dni uczących, 64 testowych, uczenie 2.2 s
+  lstm_A 2024Q4: 2403 dni uczących, 64 testowych, uczenie 2.2 s
+  lstm_A 2025Q1: 2467 dni uczących, 60 testowych, uczenie 2.2 s
+  lstm_A 2025Q2: 2527 dni uczących, 62 testowych, uczenie 2.3 s
+  lstm_A 2025Q3: 2589 dni uczących, 64 testowych, uczenie 7.5 s
+  lstm_A 2025Q4: 2653 dni uczących, 64 testowych, uczenie 6.8 s
+lstm_B, ziarno 0:
+  lstm_B 2020Q1: 1209 dni uczących, 62 testowych, uczenie 4.2 s
+  lstm_B 2020Q2: 1271 dni uczących, 63 testowych, uczenie 11.2 s
+  lstm_B 2020Q3: 1334 dni uczących, 64 testowych, uczenie 8.9 s
+  lstm_B 2020Q4: 1398 dni uczących, 64 testowych, uczenie 7.4 s
+  lstm_B 2021Q1: 1462 dni uczących, 61 testowych, uczenie 12.6 s
+  lstm_B 2021Q2: 1523 dni uczących, 63 testowych, uczenie 12.0 s
+  lstm_B 2021Q3: 1586 dni uczących, 64 testowych, uczenie 13.7 s
+  lstm_B 2021Q4: 1650 dni uczących, 64 testowych, uczenie 7.0 s
+  lstm_B 2022Q1: 1714 dni uczących, 62 testowych, uczenie 5.2 s
+  lstm_B 2022Q2: 1776 dni uczących, 62 testowych, uczenie 5.1 s
+  lstm_B 2022Q3: 1838 dni uczących, 64 testowych, uczenie 5.3 s
+  lstm_B 2022Q4: 1902 dni uczących, 63 testowych, uczenie 5.4 s
+  lstm_B 2023Q1: 1965 dni uczących, 62 testowych, uczenie 6.9 s
+  lstm_B 2023Q2: 2027 dni uczących, 62 testowych, uczenie 6.3 s
+  lstm_B 2023Q3: 2089 dni uczących, 63 testowych, uczenie 5.7 s
+  lstm_B 2023Q4: 2152 dni uczących, 63 testowych, uczenie 8.0 s
+  lstm_B 2024Q1: 2215 dni uczących, 61 testowych, uczenie 7.4 s
+  lstm_B 2024Q2: 2276 dni uczących, 63 testowych, uczenie 6.4 s
+  lstm_B 2024Q3: 2339 dni uczących, 64 testowych, uczenie 10.5 s
+  lstm_B 2024Q4: 2403 dni uczących, 64 testowych, uczenie 8.8 s
+  lstm_B 2025Q1: 2467 dni uczących, 60 testowych, uczenie 8.9 s
+  lstm_B 2025Q2: 2527 dni uczących, 62 testowych, uczenie 6.6 s
+  lstm_B 2025Q3: 2589 dni uczących, 64 testowych, uczenie 6.8 s
+  lstm_B 2025Q4: 2653 dni uczących, 64 testowych, uczenie 7.8 s
+Isolation Forest:
+  dni nietypowych w teście: 24 z 1508
+Miary:
+ model      mae  direction_accuracy  pred_std  mcnemar_p_value  binomial_p_value
+ naive 0.024511            0.545756  0.000000         1.000000          0.000208
+ arima 0.024384            0.545756  0.000186         1.000000          0.000208
+lstm_A 0.024375            0.540451  0.002707         0.779809          0.000912
+lstm_B 0.024418            0.543767  0.003091         0.615005          0.000369
+Strategie:
+ model     strategy  total_return  max_drawdown  n_trades  share_days_in_stock
+     - buy_and_hold     30.564235     -0.663351         2             1.000000
+ naive        basic     30.564235     -0.663351         2             1.000000
+ naive    threshold      0.000000      0.000000         0             0.000000
+ arima        basic     30.564235     -0.663351         2             1.000000
+ arima    threshold     30.564235     -0.663351         2             1.000000
+lstm_A        basic     15.968088     -0.660841       144             0.909814
+lstm_A    threshold     15.351698     -0.530128       312             0.793103
+lstm_B        basic     16.679128     -0.656417        62             0.875995
+lstm_B    threshold      4.149903     -0.662001        66             0.742706
+Gotowe. Czas: 456.8 s. Wyniki w /Users/konrad/praca-lstm/results
+exit: 0
+12:52:34
